@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cyber Pet</title>
+</head>
+
+<body>
+    <!-------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------->
+    <!--this section is the initial box to select the pet which will then dissapear after make pet is pressed-->
+    <div class="petSelectionWrapper">
+        <div id="choosePetBox">
+            <h2>Choose a cyber pet</h2>
+            <input type="radio" id="pet1" class="choice" name="choice" value="cat">
+            <!--type=radio means that it can be selected-->
+            <label for="pet1">Cat</label>
+            <br>
+
+            <input type="radio" id="pet2" class="choice" name="choice" value="dog">
+            <label for="pet2">Dog</label>
+            <br><br>
+
+            <label for="name">Name your pet:</label>
+            <input id="name" type="text">
+            <br><br>
+
+            <button id="submitBtn">Make Pet</button>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------->
+    <!--this section will be the basic structure for ANY of the pets that is chosen-->
+
+    <div class="valueBarsWrapper">
+        <div id="barValues">
+            <h4 class="petSubClass"><em>Header</em></h4>
+            <img id="petIcon" class="petIcon">
+            <div class="perObjects">
+                <label for="objectLvlPlay" class="objectNames" id="objectPlay">Fun</label>
+                <progress class="objectLevels" id="objectLvlPlay" max="100" value="50"> 50% </progress>
+                <label for="objectLvlFeed" class="objectNames" id="objectFeed">Feed</label>
+                <progress class="objectLevels" id="objectLvlFeed" max="100" value="60">60%</progress>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="objectButtons" id="buttonPlayWith">Play With</button>
+        <button type="submit" class="objectButtons" id="buttonFeed">Give Food</button>
+
+        <button type="submit" class="objectButtonsRIP" id="buttonKillPet">RIP</button>
+        <button type="submit" class="objectButtonsRIP" id="buttonRevivePet">Revive</button>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
