@@ -1,11 +1,43 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-#choosePetBox {
+#petChoiceWrapper {
     border: 2px solid;
     padding: 10px;
     height: 100%;
     width: 300px;
+}
+
+#statsWrapper {
+    width: 300px;
+    margin-top: 20px;
+
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+
+#cat,
+#dog,
+#rabbit {
+    display: none;
+}
+
+#petWrapper {
+    display: ;
+}
+
+#resetBtn {
+    display: ;
+}
+
+#feedBtn,
+#drinkBtn {
+    display: ;
 }

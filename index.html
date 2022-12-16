@@ -13,29 +13,30 @@
     <!-------------------------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------------->
     <!--this section is the initial box to select the pet which will then dissapear after make pet is pressed-->
-    <div class="petSelectionWrapper">
-        <div id="choosePetBox">
-            <h2>Choose a cyber pet</h2>
-            <input type="radio" id="pet1" class="choice" name="choice" value="cat">
+
+    <div id="petChoiceWrapper">
+        <h2>Choose a cyber pet</h2>
+        <form>
             <!--type=radio means that it can be selected-->
-            <label for="pet1">Cat</label>
-            <br>
+            <input type="radio" id="petCat" class="choice" value="cat" name="choice" required>
+            <label for="petCat">Cat</label><br>
 
-            <input type="radio" id="pet2" class="choice" name="choice" value="dog">
-            <label for="pet2">Dog</label>
-            <br>
+            <input type="radio" id="petDog" class="choice" value="dog" name="choice" required>
+            <label for="petDog">Dog</label><br>
 
-            <input type="radio" id="pet3" class="choice" name="choice" value="dog">
-            <label for="pet3">Rabbit</label>
+            <input type="radio" id="petRabbit" class="choice" value="rabbit" name="choice" required>
+            <label for="petRabbit">Rabbit</label>
             <br><br>
 
             <label for="name">Name your pet:</label>
-            <input id="name" type="text">
-            <br><br>
+            <input id="name" type="text" required placeholder="Pet Name">
+            <br>
+            <!--any of the REQUIRED in the inputs mean that it wont submit the form without it-->
 
-            <button id="submitBtn">Make Pet</button>
-        </div>
+            <button type="submit" id="submitBtn">Make Pet</button>
+        </form>
     </div>
+
     <!-------------------------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------------->
     <!--this section will be the basic structure for ANY of the pets that is chosen-->
